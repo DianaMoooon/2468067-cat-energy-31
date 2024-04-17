@@ -1,47 +1,55 @@
-# Папка для оптимизированных векторных иконок
+# Папка для отимизированных изображений
 
 ```shell
 └── source/
-    └── icons/
-        ├── tg.svg
-        ├── vk.svg
-        └── yt.svg
+    └── images/
+        ├── hero@1x.jpg
+        ├── hero@1x.webp
+        ├── hero@2x.jpg
+        ├── hero@2x.webp
+        └── logo.svg
 ```
 
-Находящиеся здесь иконки станут одним спрайтом:
+Отсюда файлы изображений при продакшен-сборке без изменений попадают в `build/images/`:
 
 ```shell
 └── build/
-    └── icons/                  # папка для спрайта
-        └── stack.svg           # спрайт
+    └── images/
+        ├── hero@1x.jpg
+        ├── hero@1x.webp
+        ├── hero@2x.jpg
+        ├── hero@2x.webp
+        └── logo.svg
 ```
 
-## Пример подключения иконки
+При дев-сборке изображения не копируются в `build/images/`, сервер их забирает из `source/images/`
 
-В файле БЭМ-блока путь должен быть валидным для исходников (как подсказывает редактор):
+## Пример подключения изображения
+
+В стилевом файле БЭМ-блока пути должны быть валидными для исходников (как подсказывает редактор):
 
 ```scss
-.search {
-  &::before {
-    content: "";
-    width: 44px;
-    height: 44px;
-    display: block;
-    background: #444444;
-    mask-image: url("../../icons/search.svg");
-  }
+.hero {
+  background-image:
+    image-set(
+      url("../../images/hero@1x.webp") 1x type("image/webp"),
+      url("../../images/hero@2x.webp") 2x type("image/webp"),
+      url("../../images/hero@1x.jpg") 1x type("image/jpeg"),
+      url("../../images/hero@2x.jpg") 2x type("image/jpeg")
+    );
 }
 ```
 
-Сборка сама исправит этот путь на валидный для билда путь до фрагмента стек-спрайта:
+Сборка сама исправит эти пути на валидные для билда:
 
 ```css
-.search::before {
-  content: "";
-  width: 44px;
-  height: 44px;
-  display: block;
-  background: #444444;
-  mask-image: url("../icons/stack.svg#search");
+.hero {
+  background-image:
+    image-set(
+      url("../images/hero@1x.webp") 1x type("image/webp"),
+      url("../images/hero@2x.webp") 2x type("image/webp"),
+      url("../images/hero@1x.jpg") 1x type("image/jpeg"),
+      url("../images/hero@2x.jpg") 2x type("image/jpeg")
+    );
 }
 ```
