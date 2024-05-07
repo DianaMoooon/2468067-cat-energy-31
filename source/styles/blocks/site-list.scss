@@ -1,0 +1,17 @@
+.site-list {
+ list-style-type: none;
+}
+
+.site-list__item {
+  font-family: "Oswald", sans-serif;
+  font-size: 20px;
+  line-height: 20px;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #000000;
+}
+
+.site-list__item--active {
+
+}
+
