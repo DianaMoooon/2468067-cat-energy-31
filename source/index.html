@@ -2,7 +2,7 @@
 <html class="page" lang="ru">
   <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="styles/styles.scss">
+    <link rel="stylesheet" href="styles/styles.css">
     <title>Кэт энерджи</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <link rel="icon" href="favicon.ico">
@@ -24,7 +24,12 @@
       </a>
       <nav class="main-nav">
         <button class="main-nav__toggle" type="button">
+          <img class="main-nav__toggle-open">
           <span class="visually-hidden">Открыть меню</span>
+        </button>
+        <button class="main-nav__toggle" type="button">
+          <img class="main-nav__toggle-close">
+          <span class="visually-hidden">Закрыть меню</span>
         </button>
         <div class="main-nav__wrapper">
           <ul class="main-nav__list site-list">
@@ -64,7 +69,7 @@
             </picture>
           <div class="programs">
             <dl class="programs__list">
-              <dt class="programs__title">
+              <dt class="programs__title-slim">
                 Похудение
               </dt>
               <dd class="programs__description">
@@ -73,11 +78,12 @@
               <dd class="programs__description">
                 <a class="programs__description-link" href="#">
                   Каталог slim
+                  <img class="programs__description-arrow">
                 </a>
               </dd>
             </dl>
             <dl class="programs__list">
-              <dt class="programs__title">
+              <dt class="programs__title-pro">
                 Набор массы
               </dt>
               <dd class="programs__description">
@@ -86,6 +92,7 @@
               <dd class="programs__description">
                 <a class="programs__description-link" href="#">
                   Каталог pro
+                  <img class="programs__description-arrow">
                 </a>
               </dd>
             </dl>
@@ -127,16 +134,19 @@
               </li>
             </ul>
             <span class="example__cost">Затраты на питание: 15 000 РУБ.</span>
-            <picture>
-              <source type="image/png" media="(min-width: 1440px)" srcset="images/all-picture/desktop/fat-cat-desktop@1x.png 1x, images/all-picture/desktop/fat-cat-desktop@2x.png 2x">
-              <source type="image/png" media="(min-width: 768px)" srcset="images/all-picture/tablet/fat-cat-tablet@1x.png 1x, images/all-picture/tablet/fat-cat-tablet@2x.png 2x">
-              <img src="images/all-picture/mobile/fat-cat-mobile@1x.png" srcset="images/all-picture/fat-cat-mobile@2x.png 2x" width="320" height="280" alt="Котик с лишним весом">
-            </picture>
-            <picture>
-              <source type="image/png" media="(min-width: 1440px)" srcset="images/all-picture/desktop/thin-cat-desktop@1x.png 1x, images/all-picture/desktop/thin-cat-desktop@2x.png 2x">
-              <source type="image/png" media="(min-width: 768px)" srcset="images/all-picture/tablet/thin-cat-tablet@1x.png 1x, images/all-picture/tablet/thin-cat-tablet@2x.png 2x">
-              <img src="images/all-picture/mobile/thin-cat-mobile@1x.png" srcset="images/all-picture/mobile/thin-cat-mobile@2x.png 2x" width="320" height="280" alt="Котик в отличной форме">
-            </picture>
+            <div class="example__cat">
+              <picture>
+                <source type="image/png" media="(min-width: 1440px)" srcset="images/all-picture/desktop/fat-cat-desktop@1x.png 1x, images/all-picture/desktop/fat-cat-desktop@2x.png 2x">
+                <source type="image/png" media="(min-width: 768px)" srcset="images/all-picture/tablet/fat-cat-tablet@1x.png 1x, images/all-picture/tablet/fat-cat-tablet@2x.png 2x">
+                <img src="images/all-picture/mobile/fat-cat-mobile@1x.png" srcset="images/all-picture/fat-cat-mobile@2x.png 2x" width="320" height="280" alt="Котик с лишним весом">
+              </picture>
+              <button class="example__scroll-button" type="button"></button>
+              <picture>
+                <source type="image/png" media="(min-width: 1440px)" srcset="images/all-picture/desktop/thin-cat-desktop@1x.png 1x, images/all-picture/desktop/thin-cat-desktop@2x.png 2x">
+                <source type="image/png" media="(min-width: 768px)" srcset="images/all-picture/tablet/thin-cat-tablet@1x.png 1x, images/all-picture/tablet/thin-cat-tablet@2x.png 2x">
+                <img src="images/all-picture/mobile/thin-cat-mobile@1x.png" srcset="images/all-picture/mobile/thin-cat-mobile@2x.png 2x" width="320" height="280" alt="Котик в отличной форме">
+              </picture>
+            </div>
           </div>
         </section>
     </main>
@@ -157,18 +167,22 @@
         <div class="main-footer__social social">
           <ul class="social__list">
             <li class="social__item">
-              <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy">Мы в Вконтакте</a>
+              <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy"></a>
+              <p class="visually-hidden">Мы в Вконтакте</p>
             </li>
             <li class="social__item">
-              <a class="social__link social__link--telegram" href="https://t.me/htmlacademy">Мы в Телеграме</a>
+              <a class="social__link social__link--telegram" href="https://t.me/htmlacademy"></a>
+              <p class="visually-hidden">Мы в Телеграме</p>
             </li>
             <li class="social__item">
-              <a class="social__link social__link--youtube" href="https://www.youtube.com/user/htmlacademyru">Мы в Ютубе</a>
+              <a class="social__link social__link--youtube" href="https://www.youtube.com/user/htmlacademyru"></a>
+              <p class="visually-hidden">Мы в Ютубе</p>
             </li>
           </ul>
         </div>
         <div class="main-footer__copyright copyright">
             <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+            <a class="copyright__link-icon" href="https://htmlacademy.ru/intensive/adaptive"></a>
         </div>
       </div>
     </footer>

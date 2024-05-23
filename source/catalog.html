@@ -20,7 +20,12 @@
       </a>
       <nav class="main-nav">
         <button class="main-nav__toggle" type="button">
+          <img class="main-nav__toggle-open">
           <span class="visually-hidden">Открыть меню</span>
+        </button>
+        <button class="main-nav__toggle" type="button">
+          <img class="main-nav__toggle-close">
+          <span class="visually-hidden">Закрыть меню</span>
         </button>
         <div class="main-nav__wrapper">
           <ul class="main-nav__list site-list">
@@ -196,7 +201,7 @@
             <button class="catalog__item-button" type="button">Заказать</button>
           </li>
           <li class="catalog__item">
-            <span class="catalog__name">Показать еще 100500 товаров</span>
+            <span class="catalog__name catalog__name-icon">Показать еще 100500 товаров</span>
             <div class="catalog__description">
               <p class="catalog__description-item">На самом деле вкусов гораздо больше!</p>
             </div>
@@ -247,7 +252,7 @@
           <source type="image/png" media="(min-width: 768px)" srcset="images/all-picture/tablet/catalog-background-tablet@1x.png 1x, images/all-picture/tablet/catalog-background-tablet@2x.png 2x">
           <img src="images/all-picture/mobile/catalog-background-mobile@1x.png" srcset="images/all-picture/mobile/catalog-background-mobile@2x.png 2x" width="320" height="280" alt="Банка Cat Energy">
         </picture>
-        <p class="gifts__description">Закажите все<br>и получите чехол для<br>кота в подарок!</p>
+        <p class="gifts__description gifts__description-icon">Закажите все<br>и получите чехол для<br>кота в подарок!</p>
       </div>
       <section class="promotions-subscribe">
         <h3 class="promotions-subscribe__title">Акции и новинки</h3>
@@ -276,18 +281,22 @@
         <div class="main-footer__social social">
           <ul class="social__list">
             <li class="social__item">
-              <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy">Мы в Вконтакте</a>
+              <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy"></a>
+              <p class="visually-hidden">Мы в Вконтакте</p>
             </li>
             <li class="social__item">
-              <a class="social__link social__link--telegram" href="https://t.me/htmlacademy">Мы в Телеграме</a>
+              <a class="social__link social__link--telegram" href="https://t.me/htmlacademy"></a>
+              <p class="visually-hidden">Мы в Телеграме</p>
             </li>
             <li class="social__item">
-              <a class="social__link social__link--youtube" href="https://www.youtube.com/user/htmlacademyru">Мы в Ютубе</a>
+              <a class="social__link social__link--youtube" href="https://www.youtube.com/user/htmlacademyru"></a>
+              <p class="visually-hidden">Мы в Ютубе</p>
             </li>
           </ul>
         </div>
         <div class="main-footer__copyright copyright">
             <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+            <a class="copyright__link-icon" href="https://htmlacademy.ru/intensive/adaptive"></a>
         </div>
       </div>
     </footer>
