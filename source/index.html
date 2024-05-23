@@ -23,15 +23,11 @@
         <img class="main-header__logo-text" src="images/logo/logo-text.svg" width="101" height="20" alt="Товарный знак компании Cat Energy">
       </a>
       <nav class="main-nav">
-        <button class="main-nav__toggle" type="button">
-          <a class="main-nav__toggle-open" href="#">
-            <span class="visually-hidden">Открыть меню</span>
-          </a>
+        <button class="main-nav__toggle-open" type="button">
+          <span class="visually-hidden">Открыть меню</span>
         </button>
-        <button class="main-nav__toggle" type="button">
-          <a class="main-nav__toggle-close" href="#">
-            <span class="visually-hidden">Закрыть меню</span>
-          </a>
+        <button class="main-nav__toggle-close" type="button">
+          <span class="visually-hidden">Закрыть меню</span>
         </button>
         <div class="main-nav__wrapper">
           <ul class="main-nav__list site-list">
@@ -80,9 +76,9 @@
               <dd class="programs__description">
                 <a class="programs__description-link" href="#">
                   Каталог slim
-                  <a class="programs__description-arrow" href="#">
+                  <span class="programs__description-arrow">
                     <span class="visually-hidden">Перейти в каталог slim</span>
-                  </a>
+                  </span>
                 </a>
               </dd>
             </dl>
@@ -96,9 +92,9 @@
               <dd class="programs__description">
                 <a class="programs__description-link" href="#">
                   Каталог pro
-                  <a class="programs__description-arrow" href="#">
+                  <span class="programs__description-arrow">
                     <span class="visually-hidden">Перейти в каталог pro</span>
-                  </a>
+                  </span>
                 </a>
               </dd>
             </dl>
@@ -193,7 +189,9 @@
         </div>
         <div class="main-footer__copyright copyright">
             <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
-            <a class="copyright__link-icon" href="https://htmlacademy.ru/intensive/adaptive"></a>
+            <a class="copyright__link-icon" href="https://htmlacademy.ru/intensive/adaptive">
+              <span class="visually-hidden">Сайт HTML Academy</span>
+            </a>
         </div>
       </div>
     </footer>
