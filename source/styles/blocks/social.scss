@@ -14,14 +14,59 @@
 
 // }
 
-// social__link--vkontakte {
+.social__link--vkontakte {
+  mask-image: url("../../icons/stack.svg#icon-vk");
+  mask-repeat: no-repeat;
+  display: block;
+  width: 27px;
+  height: 17px;
+  background-color: #666666;
+  margin: 0;
+}
 
-// }
+.social__link--vkontakte:hover,
+.social__link--vkontakte:focus {
+  background-color: #68b738;
+}
 
-// social__link--telegram {
+.social__link--vkontakte:active {
+  background-color: rgba(104, 183, 56, 30);
+}
 
-// }
+.social__link--telegram {
+  mask-image: url("../../icons/stack.svg#icon-telegram");
+  mask-repeat: no-repeat;
+  display: block;
+  width: 27px;
+  height: 17px;
+  background-color: #666666;
+  margin: 0;
+}
 
-// social__link--youtube {
+.social__link--telegram:hover,
+.social__link--telegram:focus {
+  background-color: #68b738;
+}
 
-// }
+.social__link--telegram:active {
+  background-color: rgba(104, 183, 56, 30);
+}
+
+.social__link--youtube {
+  mask-image: url("../../icons/stack.svg#icon-youtube");
+  mask-repeat: no-repeat;
+  display: block;
+  width: 27px;
+  height: 17px;
+  background-color: #666666;
+  margin: 0;
+}
+
+.social__link--youtube:hover,
+.social__link--youtube:focus {
+  background-color: #68b738;
+}
+
+.social__link--youtube:active {
+  background-color: rgba(104, 183, 56, 30);
+}

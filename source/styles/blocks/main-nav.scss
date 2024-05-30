@@ -2,9 +2,23 @@
 
 // }
 
-// main-nav__toggle {
+.main-nav__toggle-open {
+  mask-image: url("../../icons/stack.svg#icon-burger");
+  background-color: #000000;
+  mask-repeat: no-repeat;
+  display: block;
+  width: 27px;
+  height: 17px;
+}
 
-// }
+.main-nav__toggle-close {
+  mask-image: url("../../icons/stack.svg#icon-cancel");
+  background-color: #000000;
+  mask-repeat: no-repeat;
+  display: block;
+  width: 27px;
+  height: 17px;
+}
 
 // main-nav__wrapper {
 

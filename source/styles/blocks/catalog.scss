@@ -23,6 +23,10 @@
   text-transform: uppercase;
 }
 
+.catalog__name-icon {
+  background-image: url("../../icons/stack.svg#icon-plus");
+}
+
 .catalog__description {
   font-family: "LATO", sans-serif;
   font-size: 12px;

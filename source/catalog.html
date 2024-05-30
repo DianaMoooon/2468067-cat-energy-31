@@ -11,30 +11,41 @@
 
     <header class="main-header">
       <a class="main-header__logo" href="index.html">
-        <img class="main-header__logo-image" src="../source/icons/logo-cat-energy.svg" width="60" height="50" alt="Cat Energy">
+        <picture>
+          <source media="(min-width: 1440px)" srcset="images/logo/logo-cat-energy-desktop.svg" type="image/svg+xml" width="70" height="59">
+          <source media="(min-width: 768px)" srcset="images/logo/logo-cat-energy-tablet.svg" type="image/svg+xml" width="60" height="50">
+          <img class="main-header__logo-image" src="images/logo/logo-cat-energy-mobile.svg" width="33" height="38" alt="Логотип комапании Cat Energy">
+        </picture>
+        <img class="main-header__logo-text" src="images/logo/logo-text.svg" width="101" height="20" alt="Товарный знак компании Cat Energy">
       </a>
       <nav class="main-nav">
         <button class="main-nav__toggle" type="button">
-          <span class="visually-hidden">Открыть меню</span>
+          <span class="main-nav__toggle-open">
+            <span class="visually-hidden">Открыть меню</span>
+          </span>
+        </button>
+        <button class="main-nav__toggle" type="button">
+          <span class="main-nav__toggle-close">
+            <span class="visually-hidden">Закрыть меню</span>
+          </span>
         </button>
         <div class="main-nav__wrapper">
-          <span class="main-nav__title">Cat Energy</span>
           <ul class="main-nav__list site-list">
             <li class="site-list__item site-list__item--active">
-            <a class="site-list__item" href="#">
-              Главная
-            </a>
-          </li>
-          <li class="site-list__item">
-            <a class="site-list__item" href="#">
-              Каталог продукции
-            </a>
-          </li>
-          <li class="site-list__item">
-            <a class="site-list__item" href="#">
-              Подбор программы
-            </a>
-          </li>
+              <a class="site-list__item" href="#">
+                Главная
+              </a>
+            </li>
+            <li class="site-list__item">
+              <a class="site-list__item" href="#">
+                Каталог продукции
+              </a>
+            </li>
+            <li class="site-list__item">
+              <a class="site-list__item" href="#">
+                Подбор программы
+              </a>
+            </li>
           </ul>
         </div>
       </nav>
@@ -192,7 +203,7 @@
             <button class="catalog__item-button" type="button">Заказать</button>
           </li>
           <li class="catalog__item">
-            <span class="catalog__name">Показать еще 100500 товаров</span>
+            <span class="catalog__name catalog__name-icon">Показать еще 100500 товаров</span>
             <div class="catalog__description">
               <p class="catalog__description-item">На самом деле вкусов гораздо больше!</p>
             </div>
@@ -243,7 +254,7 @@
           <source type="image/png" media="(min-width: 768px)" srcset="images/all-picture/tablet/catalog-background-tablet@1x.png 1x, images/all-picture/tablet/catalog-background-tablet@2x.png 2x">
           <img src="images/all-picture/mobile/catalog-background-mobile@1x.png" srcset="images/all-picture/mobile/catalog-background-mobile@2x.png 2x" width="320" height="280" alt="Банка Cat Energy">
         </picture>
-        <p class="gifts__description">Закажите все<br>и получите чехол для<br>кота в подарок!</p>
+        <p class="gifts__description gifts__description-icon">Закажите все<br>и получите чехол для<br>кота в подарок!</p>
       </div>
       <section class="promotions-subscribe">
         <h3 class="promotions-subscribe__title">Акции и новинки</h3>
@@ -264,25 +275,35 @@
           <picture>
             <source type="image/png" media="(min-width: 1440px)" srcset="images/all-picture/desktop/map-desktop@1x.png 1x, images/all-picture/desktop/map-desktop@2x.png 2x">
             <source type="image/png" media="(min-width: 768px)" srcset="images/all-picture/tablet/map-tablet@1x.png 1x, images/all-picture/tablet/map-tablet@2x.png 2x">
-            <img src="images/all-picture/mobile/map-mobile@1x.png" srcset="images/all-picture/map-mobile@2x.png 2x" width="320" height="280" alt="Карта">
+            <img class="main-footer__map" src="images/all-picture/mobile/map-mobile@1x.png" srcset="images/all-picture/map-mobile@2x.png 2x" width="320" height="280" alt="Карта">
           </picture>
+          <img class="main-footer__map-pin" src="images/logo/icon-map-pin.svg" width="57" height="53" alt="Локация компании Cat Energy на карте">
         </div>
-        <span class="main-footer__title-large">Cat Energy</span>
+        <img class="main-footer__map-logo-text" src="images/logo/logo-text.svg" width="101" height="20" alt="Товарный знак компании Cat Energy">
         <div class="main-footer__social social">
           <ul class="social__list">
             <li class="social__item">
-              <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy">Мы в Вконтакте</a>
+              <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy">
+                <span class="visually-hidden">Мы в Вконтакте</span>
+              </a>
             </li>
             <li class="social__item">
-              <a class="social__link social__link--telegram" href="https://t.me/htmlacademy">Мы в Телеграме</a>
+              <a class="social__link social__link--telegram" href="https://t.me/htmlacademy">
+                <span class="visually-hidden">Мы в Телеграме</span>
+              </a>
             </li>
             <li class="social__item">
-              <a class="social__link social__link--youtube" href="https://www.youtube.com/user/htmlacademyru">Мы в Ютубе</a>
+              <a class="social__link social__link--youtube" href="https://www.youtube.com/user/htmlacademyru">
+                <span class="visually-hidden">Мы в Ютубе</span>
+              </a>
             </li>
           </ul>
         </div>
         <div class="main-footer__copyright copyright">
             <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+            <a class="copyright__link-icon" href="https://htmlacademy.ru/intensive/adaptive">
+              <span class="visually-hidden">Сайт HTML Academy</span>
+            </a>
         </div>
       </div>
     </footer>
